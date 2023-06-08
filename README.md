@@ -9,8 +9,6 @@ This Client will be implemented using
 - error handling using [arrow-fx][2]
 - Kotlin Code style & formatting check using [ktlint][3]
 
-![Sample][appSample]
-
 Installing
 ----------
 
@@ -24,9 +22,6 @@ Icons
 -----
 
 All icons, were downloaded from [flaticon.com][4]
-
-Supporting sites
-----------------
 
 [1]: https://github.com/Kodein-Framework/Kodein-DI/
 [2]: https://github.com/arrow-kt/arrow
