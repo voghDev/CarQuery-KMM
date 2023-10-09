@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
                             .verticalScroll(rememberScrollState())
                     ) {
                         DeepLinkButton("My Courses DeepLink") { launchDeepLink("domestika://mycourses") }
-                        DeepLinkButton("Course Landing DeepLink") { launchDeepLink("domestika://course") }
+                        DeepLinkButton("Course Landing DeepLink") { launchDeepLink("domestika://course/4587") }
                         DeepLinkButton("Courses DeepLink") { launchDeepLink("domestika://courses/") }
                         DeepLinkButton("Profile DeepLink") { launchDeepLink("domestika://profile/") }
                         DeepLinkButton("ConfirmRegistration DeepLink") { launchDeepLink("domestika://apps") }
