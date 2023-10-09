@@ -35,20 +35,20 @@ class MainActivity : ComponentActivity() {
                             .fillMaxSize()
                             .verticalScroll(rememberScrollState())
                     ) {
-                        DeepLinkButton("My Courses DeepLink") { launchDeepLink("domestika://mycourses") }
-                        DeepLinkButton("Course Landing DeepLink") { launchDeepLink("domestika://course/4587") }
-                        DeepLinkButton("Courses DeepLink") { launchDeepLink("domestika://courses/") }
-                        DeepLinkButton("Profile DeepLink") { launchDeepLink("domestika://profile/") }
-                        DeepLinkButton("ConfirmRegistration DeepLink") { launchDeepLink("domestika://apps") }
-                        DeepLinkButton("Downloads DeepLink") { launchDeepLink("domestika://downloads") }
-                        DeepLinkButton("Login DeepLink") { launchDeepLink("domestika://login") }
-                        DeepLinkButton("My Settings DeepLink") { launchDeepLink("domestika://mysettings") }
-                        DeepLinkButton("Project DeepLink") { launchDeepLink("domestika://project/12") }
-                        DeepLinkButton("SignUp DeepLink") { launchDeepLink("domestika://signup") }
-                        DeepLinkButton("ResetPassword DeepLink") { launchDeepLink("domestika://auth/password/edit") }
-                        DeepLinkButton("Search DeepLink") { launchDeepLink("domestika://search") }
-                        DeepLinkButton("Topic DeepLink") { launchDeepLink("domestika://topic/") }
-                        DeepLinkButton("Topic Detail DeepLink") { launchDeepLink("domestika://topic/12") }
+                        DeepLinkButton("login") { launchDeepLink("domestika://login") }
+                        DeepLinkButton("downloads") { launchDeepLink("domestika://downloads") }
+                        DeepLinkButton("mycourses") { launchDeepLink("domestika://mycourses") }
+                        DeepLinkButton("myprofile") { launchDeepLink("domestika://myprofile") }
+                        DeepLinkButton("Courses orderBy popular 11") { launchDeepLink("domestika://courses?order=popular&filters=exclude_purchased&filterParams=11") }
+                        DeepLinkButton("Courses orderBy popular") { launchDeepLink("domestika://courses?order=popular&filters=exclude_purchased") }
+                        DeepLinkButton("Courses orderBy recent 11") { launchDeepLink("domestika://courses?order=recent&filters=exclude_purchased&filterParams=11") }
+                        DeepLinkButton("Courses orderBy recent") { launchDeepLink("domestika://courses?order=recent&filters=exclude_purchased") }
+                        DeepLinkButton("Courses orderBy bestseller 11") { launchDeepLink("domestika://courses?order=bestseller&filters=exclude_purchased&filterParams=11") }
+                        DeepLinkButton("Courses orderBy bestseller") { launchDeepLink("domestika://courses?order=bestseller&filters=exclude_purchased") }
+                        DeepLinkButton("Courses orderBy highestRated 11") { launchDeepLink("domestika://courses?order=highest_rated&filters=exclude_purchased&filterParams=11") }
+                        DeepLinkButton("Courses orderBy highestRated") { launchDeepLink("domestika://courses?order=highest_rated&filters=exclude_purchased") }
+                        DeepLinkButton("Courses 528") { launchDeepLink("domestika://courses/528") }
+                        DeepLinkButton("search watercolor") { launchDeepLink("domestika://search/watercolor") }
                     }
                 }
             }
