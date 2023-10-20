@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
                             .fillMaxSize()
                             .verticalScroll(rememberScrollState())
                     ) {
-                        val scheme = "domestika"
+                        val scheme = BuildConfig.Scheme
                         DeepLinkButton("login") { launchDeepLink("$scheme://login") }
                         DeepLinkButton("downloads") { launchDeepLink("$scheme://downloads") }
                         DeepLinkButton("mycourses") { launchDeepLink("$scheme://mycourses") }

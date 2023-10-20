@@ -28,6 +28,27 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        production {
+            Properties prop = new Properties()
+            prop.load(project.rootProject.file('local.properties').newDataInputStream())
+            def scheme = prop.get("scheme", null)
+            if (scheme == null)
+                throw new GradleException("Can't find scheme in local.properties. Please set it to your scheme");
+
+            buildConfigField("String", "Scheme", "\"${scheme}\"")
+
+            dimension "default"
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
