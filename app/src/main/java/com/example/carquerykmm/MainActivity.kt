@@ -35,20 +35,21 @@ class MainActivity : ComponentActivity() {
                             .fillMaxSize()
                             .verticalScroll(rememberScrollState())
                     ) {
-                        DeepLinkButton("login") { launchDeepLink("domestika://login") }
-                        DeepLinkButton("downloads") { launchDeepLink("domestika://downloads") }
-                        DeepLinkButton("mycourses") { launchDeepLink("domestika://mycourses") }
-                        DeepLinkButton("myprofile") { launchDeepLink("domestika://myprofile") }
-                        DeepLinkButton("Courses orderBy popular 11") { launchDeepLink("domestika://courses?order=popular&filters=exclude_purchased&filterParams=11") }
-                        DeepLinkButton("Courses orderBy popular") { launchDeepLink("domestika://courses?order=popular&filters=exclude_purchased") }
-                        DeepLinkButton("Courses orderBy recent 11") { launchDeepLink("domestika://courses?order=recent&filters=exclude_purchased&filterParams=11") }
-                        DeepLinkButton("Courses orderBy recent") { launchDeepLink("domestika://courses?order=recent&filters=exclude_purchased") }
-                        DeepLinkButton("Courses orderBy bestseller 11") { launchDeepLink("domestika://courses?order=bestseller&filters=exclude_purchased&filterParams=11") }
-                        DeepLinkButton("Courses orderBy bestseller") { launchDeepLink("domestika://courses?order=bestseller&filters=exclude_purchased") }
-                        DeepLinkButton("Courses orderBy highestRated 11") { launchDeepLink("domestika://courses?order=highest_rated&filters=exclude_purchased&filterParams=11") }
-                        DeepLinkButton("Courses orderBy highestRated") { launchDeepLink("domestika://courses?order=highest_rated&filters=exclude_purchased") }
-                        DeepLinkButton("Courses 528") { launchDeepLink("domestika://courses/528") }
-                        DeepLinkButton("search watercolor") { launchDeepLink("domestika://search/watercolor") }
+                        val scheme = "domestika"
+                        DeepLinkButton("login") { launchDeepLink("$scheme://login") }
+                        DeepLinkButton("downloads") { launchDeepLink("$scheme://downloads") }
+                        DeepLinkButton("mycourses") { launchDeepLink("$scheme://mycourses") }
+                        DeepLinkButton("myprofile") { launchDeepLink("$scheme://myprofile") }
+                        DeepLinkButton("Courses orderBy popular 11") { launchDeepLink("$scheme://courses?order=popular&filters=exclude_purchased&filterParams=11") }
+                        DeepLinkButton("Courses orderBy popular") { launchDeepLink("$scheme://courses?order=popular&filters=exclude_purchased") }
+                        DeepLinkButton("Courses orderBy recent 11") { launchDeepLink("$scheme://courses?order=recent&filters=exclude_purchased&filterParams=11") }
+                        DeepLinkButton("Courses orderBy recent") { launchDeepLink("$scheme://courses?order=recent&filters=exclude_purchased") }
+                        DeepLinkButton("Courses orderBy bestseller 11") { launchDeepLink("$scheme://courses?order=bestseller&filters=exclude_purchased&filterParams=11") }
+                        DeepLinkButton("Courses orderBy bestseller") { launchDeepLink("$scheme://courses?order=bestseller&filters=exclude_purchased") }
+                        DeepLinkButton("Courses orderBy highestRated 11") { launchDeepLink("$scheme://courses?order=highest_rated&filters=exclude_purchased&filterParams=11") }
+                        DeepLinkButton("Courses orderBy highestRated") { launchDeepLink("$scheme://courses?order=highest_rated&filters=exclude_purchased") }
+                        DeepLinkButton("Courses 528") { launchDeepLink("$scheme://courses/528") }
+                        DeepLinkButton("search watercolor") { launchDeepLink("$scheme://search/watercolor") }
                     }
                 }
             }
