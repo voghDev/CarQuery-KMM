@@ -51,12 +51,12 @@ class MainActivity : ComponentActivity() {
                         DeepLinkButton("Courses orderBy highestRated 11") { launchDeepLink("$scheme://courses?order=highest_rated&filters=exclude_purchased&filterParams=11") }
                         DeepLinkButton("Courses orderBy highestRated") { launchDeepLink("$scheme://courses?order=highest_rated&filters=exclude_purchased") }
                         DeepLinkButton("Courses 528") { launchDeepLink("$scheme://courses/528") }
-                        DeepLinkButton("Courses") { launchDeepLink("$scheme://courses/") }
+                        DeepLinkButton("Courses") { launchDeepLink("$scheme://courses") }
                         DeepLinkButton("search watercolor") { launchDeepLink("$scheme://search/watercolor") }
                         DeepLinkButton("SignUp DeepLink") { launchDeepLink("$scheme://signup") }
                         DeepLinkButton("ResetPassword DeepLink") { launchDeepLink("$scheme://auth/password/edit") }
                         DeepLinkButton("Search DeepLink") { launchDeepLink("$scheme://search") }
-                        DeepLinkButton("Topic DeepLink") { launchDeepLink("$scheme://topic/") }
+                        DeepLinkButton("Topic DeepLink") { launchDeepLink("$scheme://topic") }
                         DeepLinkButton("Launch DeepLink") { launchDeepLink("$scheme://launch/") }
                         DeepLinkButton("Topic Detail DeepLink") { launchDeepLink("$scheme://topic/12") }
                         DeepLinkButton("Project Detail DeepLink") { launchDeepLink("$scheme://project/1666844") }
