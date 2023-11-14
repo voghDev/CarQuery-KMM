@@ -42,14 +42,16 @@ class MainActivity : ComponentActivity() {
                         DeepLinkButton("mycourses") { launchDeepLink("$scheme://mycourses") }
                         DeepLinkButton("myprofile") { launchDeepLink("$scheme://myprofile") }
                         DeepLinkButton("mysettings") { launchDeepLink("$scheme://mysettings") }
-                        DeepLinkButton("Courses orderBy popular 11") { launchDeepLink("$scheme://courses?order=popular&filters=exclude_purchased&filterParams=11") }
-                        DeepLinkButton("Courses orderBy popular") { launchDeepLink("$scheme://courses?order=popular&filters=exclude_purchased") }
-                        DeepLinkButton("Courses orderBy recent 11") { launchDeepLink("$scheme://courses?order=recent&filters=exclude_purchased&filterParams=11") }
-                        DeepLinkButton("Courses orderBy recent") { launchDeepLink("$scheme://courses?order=recent&filters=exclude_purchased") }
-                        DeepLinkButton("Courses orderBy bestseller 11") { launchDeepLink("$scheme://courses?order=bestseller&filters=exclude_purchased&filterParams=11") }
-                        DeepLinkButton("Courses orderBy bestseller") { launchDeepLink("$scheme://courses?order=bestseller&filters=exclude_purchased") }
-                        DeepLinkButton("Courses orderBy highestRated 11") { launchDeepLink("$scheme://courses?order=highest_rated&filters=exclude_purchased&filterParams=11") }
-                        DeepLinkButton("Courses orderBy highestRated") { launchDeepLink("$scheme://courses?order=highest_rated&filters=exclude_purchased") }
+                        DeepLinkButton("Courses orderBy popular basics categ 11") { launchDeepLink("$scheme://courses?order=popular&filters=basics-category&filterParams=11") }
+                        DeepLinkButton("Courses orderBy popular basics") { launchDeepLink("$scheme://courses?order=popular&filters=basics") }
+                        DeepLinkButton("Courses orderBy recent area 102") { launchDeepLink("$scheme://courses?order=recent&filters=basics-area&filterParams=102") }
+                        DeepLinkButton("Courses orderBy recent") { launchDeepLink("$scheme://courses?order=recent&filters=basics") }
+                        DeepLinkButton("Courses orderBy bestseller categ 11") { launchDeepLink("$scheme://courses?order=bestseller&filters=category&filterParams=11") }
+                        DeepLinkButton("Courses orderBy bestseller basics") { launchDeepLink("$scheme://courses?order=bestseller&filters=basics") }
+                        DeepLinkButton("Courses orderBy bestseller basics area 102") { launchDeepLink("$scheme://courses?order=bestseller&filters=basics-area&filterParams=102") }
+                        DeepLinkButton("Courses orderBy highestRated categ 11") { launchDeepLink("$scheme://courses?order=highest_rated&filters=category&filterParams=11") }
+                        DeepLinkButton("Courses orderBy highestRated area 102") { launchDeepLink("$scheme://courses?order=highest_rated&filters=area&filterParams=102") }
+                        DeepLinkButton("Courses orderBy highestRated") { launchDeepLink("$scheme://courses?order=highest_rated&filters=basics") }
                         DeepLinkButton("Courses 528") { launchDeepLink("$scheme://courses/528") }
                         DeepLinkButton("Courses") { launchDeepLink("$scheme://courses") }
                         DeepLinkButton("search watercolor") { launchDeepLink("$scheme://search/watercolor") }
@@ -60,13 +62,12 @@ class MainActivity : ComponentActivity() {
                         DeepLinkButton("Launch DeepLink") { launchDeepLink("$scheme://launch/") }
                         DeepLinkButton("Topic Detail DeepLink") { launchDeepLink("$scheme://topic/12") }
                         DeepLinkButton("Project Detail DeepLink") { launchDeepLink("$scheme://project/1666844") }
-                        DeepLinkButton("exclude_purchases") { launchDeepLink("$scheme://courses?filter=exclude_purchases")}
-                        DeepLinkButton("purchased_only") { launchDeepLink("$scheme://courses?filter=purchased_only")}
-                        DeepLinkButton("accessible_only") { launchDeepLink("$scheme://courses?filter=accessible_only")}
-                        DeepLinkButton("exclude_accessible") { launchDeepLink("$scheme://courses?filter=exclude_accessible")}
-                        DeepLinkButton("basics") { launchDeepLink("$scheme://courses?filter=basics")}
-                        DeepLinkButton("category") { launchDeepLink("$scheme://courses?filter=category")}
-                        DeepLinkButton("area") { launchDeepLink("$scheme://courses?filter=area")}
+                        DeepLinkButton("courses basics"){ launchDeepLink("$scheme://courses?filters=basics")}
+                        DeepLinkButton("courses category 11"){ launchDeepLink("$scheme://courses?filters=category&filterParams=11")}
+                        DeepLinkButton("courses area 102"){ launchDeepLink("$scheme://courses?filters=area&filterParams=102")}
+                        DeepLinkButton("courses highest_rated basics"){ launchDeepLink("$scheme://courses?order=highest_rated&filters=basics")}
+                        DeepLinkButton("courses highest_rated category 11"){ launchDeepLink("$scheme://courses?order=highest_rated&filters=category&filterParams=11")}
+                        DeepLinkButton("courses bestseller area 102"){ launchDeepLink("$scheme://courses?order=bestseller&filters=area&filterParams=102")}
                         DeepLinkButton("Lesson") { launchDeepLink("$scheme://courses/4855/units/16672/lessons/53071")}
                     }
                 }
