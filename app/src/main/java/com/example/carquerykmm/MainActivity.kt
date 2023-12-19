@@ -46,12 +46,13 @@ class MainActivity : ComponentActivity() {
                         DeepLinkButton("Courses orderBy popular basics") { launchDeepLink("$scheme://courses?order=popular&filters=basics") }
                         DeepLinkButton("Courses orderBy recent area 102") { launchDeepLink("$scheme://courses?order=recent&filters=basics-area&filterParams=102") }
                         DeepLinkButton("Courses orderBy recent") { launchDeepLink("$scheme://courses?order=recent&filters=basics") }
-                        DeepLinkButton("Courses orderBy bestseller categ 11") { launchDeepLink("$scheme://courses?order=bestseller&filters=category&filterParams=11") }
+                        DeepLinkButton("2 Courses categ 11") { launchDeepLink("$scheme://courses?filters=category&filterParams=11") }
                         DeepLinkButton("Courses orderBy bestseller basics") { launchDeepLink("$scheme://courses?order=bestseller&filters=basics") }
                         DeepLinkButton("Courses orderBy bestseller basics area 102") { launchDeepLink("$scheme://courses?order=bestseller&filters=basics-area&filterParams=102") }
                         DeepLinkButton("Courses orderBy highestRated categ 11") { launchDeepLink("$scheme://courses?order=highest_rated&filters=category&filterParams=11") }
                         DeepLinkButton("Courses orderBy highestRated area 102") { launchDeepLink("$scheme://courses?order=highest_rated&filters=area&filterParams=102") }
                         DeepLinkButton("Courses orderBy highestRated") { launchDeepLink("$scheme://courses?order=highest_rated&filters=basics") }
+                        DeepLinkButton("Courses orderBy price - basics") { launchDeepLink("$scheme://courses?order=price&filters=basics") }
                         DeepLinkButton("Courses 528") { launchDeepLink("$scheme://courses/528") }
                         DeepLinkButton("Courses") { launchDeepLink("$scheme://courses") }
                         DeepLinkButton("search watercolor") { launchDeepLink("$scheme://search/watercolor") }
@@ -62,13 +63,21 @@ class MainActivity : ComponentActivity() {
                         DeepLinkButton("Launch DeepLink") { launchDeepLink("$scheme://launch/") }
                         DeepLinkButton("Topic Detail DeepLink") { launchDeepLink("$scheme://topic/12") }
                         DeepLinkButton("Project Detail DeepLink") { launchDeepLink("$scheme://project/1666844") }
-                        DeepLinkButton("courses basics"){ launchDeepLink("$scheme://courses?filters=basics")}
+                        DeepLinkButton("1 courses basics"){ launchDeepLink("$scheme://courses?filters=basics")}
                         DeepLinkButton("courses category 11"){ launchDeepLink("$scheme://courses?filters=category&filterParams=11")}
-                        DeepLinkButton("courses area 102"){ launchDeepLink("$scheme://courses?filters=area&filterParams=102")}
+                        DeepLinkButton("3 courses area 102"){ launchDeepLink("$scheme://courses?filters=area&filterParams=102")}
                         DeepLinkButton("courses highest_rated basics"){ launchDeepLink("$scheme://courses?order=highest_rated&filters=basics")}
                         DeepLinkButton("courses highest_rated category 11"){ launchDeepLink("$scheme://courses?order=highest_rated&filters=category&filterParams=11")}
                         DeepLinkButton("courses bestseller area 102"){ launchDeepLink("$scheme://courses?order=bestseller&filters=area&filterParams=102")}
+                        DeepLinkButton("4 courses bestseller"){ launchDeepLink("$scheme://courses?order=bestseller")}
                         DeepLinkButton("Lesson") { launchDeepLink("$scheme://courses/4855/units/16672/lessons/53071")}
+                        DeepLinkButton("Discover Recommended") { launchDeepLink("$scheme://discover/recommended")}
+                        DeepLinkButton("Discover others are watching") { launchDeepLink("$scheme://discover/otherswatching")}
+                        DeepLinkButton("Discover new plus courses") { launchDeepLink("$scheme://discover/newpluscourses")}
+                        DeepLinkButton("Wishlists") { launchDeepLink("$scheme://wishlists")}
+                        DeepLinkButton("MyCourses recommended") { launchDeepLink("$scheme://mycourses/recommended")}
+                        DeepLinkButton("Plus credits") { launchDeepLink("$scheme://pluscredits")}
+                        DeepLinkButton("Purchase plus credits") { launchDeepLink("$scheme://purchasepluscredits")}
                     }
                 }
             }
