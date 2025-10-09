@@ -35,3 +35,19 @@ Do not add unnecessary comments to the code. Only add a comment to clarify a rea
 When reading prompts have in mind that we will compact long class names with only the capital letters;
 For example MainActivityViewModel will be referred as MAVM. 
 When we enter sentences like “Refactor MAVM” or “Fix tests in MAVMT”, do a search for files that have been recently mentioned and match the capital letters we wrote in the prompt.
+
+If you are performing changes in the Android part of the project, try to find connected devices using
+
+`adb devices`
+
+If there is a connected device, install the app using
+
+`./gradlew installDebug`
+
+If the install succeeds, launch the App using
+
+`adb shell am start -n com.example.carquerykmm/.MainActivity`
+
+If `adb devices` detects multiple devices, just install in the first one using 
+
+`adb -s <device-name> install app/build/outputs/apk/debug/app-debug.apk`
