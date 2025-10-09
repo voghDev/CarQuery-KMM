@@ -109,3 +109,9 @@ target
 
 # Intellij project files
 *.iws
+
+# Claude Code
+.claude/
+
+# Kotlin
+.kotlin/
