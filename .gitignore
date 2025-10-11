@@ -115,3 +115,20 @@ target
 
 # Kotlin
 .kotlin/
+
+# iOS/Xcode
+iosApp/build/
+iosApp/*.xcodeproj/*
+!iosApp/*.xcodeproj/project.pbxproj
+!iosApp/*.xcodeproj/*.xcworkspace
+iosApp/*.xcworkspace/*
+!iosApp/*.xcworkspace/contents.xcworkspacedata
+!iosApp/*.xcworkspace/xcshareddata
+iosApp/xcuserdata/
+iosApp/*.moved-aside
+iosApp/*.pbxuser
+iosApp/*.mode1v3
+iosApp/*.mode2v3
+iosApp/*.perspectivev3
+iosApp/DerivedData/
+iosApp/Pods/
